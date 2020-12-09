@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: ##AEB6BF;
+    padding-bottom: 60px;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb
+  {
+      background-image: -webkit-gradient(linear,
+                                         left bottom,
+                                         left top,
+                                         color-stop(0.68, #707070),
+                                         color-stop(0.44, #8DA2F8),
+                                         color-stop(0.44, #8DA2F8));
+  }
+header{
+    padding: 15px;
+    color: #010101;
+    background: #EDBB99;
+    
+    
+}
+header h2{
+    font-family: 'impact';
+    display: inline;
+    background: -webkit-linear-gradient(#F1C40F, #7c22bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+header p{
+    font-family: 'times new roman';
+    display: inline;
+    background: -webkit-linear-gradient(#F1C40F, #7c22bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    font-family: 'Caveat';
+    font-size: 18px;
+}
+.full-screen{
+    padding: 8% 15%;
+    background-color:#F5CBA7; 
+}
+.full-screen h1{
+    font-family: 'algerian';
+    padding: 8px;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#1b46f2, #7c22bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.full-screen p{
+	font-family: 'times new roman'
+    padding: 5px;
+}
+.button{
+    transition: 0.3s all;
+    background: linear-gradient(to bottom left, #1b46f2, #7c22bd);
+    border: none;
+    padding: 8px;
+    border-radius: 36px;
+    width: 150px;
+    color: #fff;
+    font-weight: 600;
+    background-size: 300%;    
+    text-shadow: 12px 0px 12px linear-gradient(to bottom left, #1b46f2, #7c22bd);
+    outline: none;
+    margin: 8px 0px;
+    font-family: 'Baloo 2';
+}
+.button:hover{
+    transition: 0.3s all;
+    background-size: 100%;
+    border: none;
+}
+.bottom-navigation{
+    background: #fff;
+    box-shadow: -12px 0px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ul{ 
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+ul li{
+    transition: 0.3s all;
+    padding: 15px;
+    display: inline-block;
+    cursor: default;
+    border-top: 3px solid #fff; 
+    color: #003bcf;
+   
+}
+ul li:hover{
+    transition: 0.3s all;
+    background: rgba(27, 70, 242, 0.15);
+    border-top: 3px solid #1b46f2;
+}
+ul li.active{
+    border-top: 3px solid #1b46f2; 
+    
+}
+
+
+.card{
+    padding: 15px;
+    border-radius: 15px;
+    background: #fff;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 12px 0px 12px rgba(0,0,0,0.05);
+}
+.card .btn{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+.card img{
+    border-radius: 15px;
+    height: 180px;
+    width: auto;
+}
+.flex-box{
+    display: flex;
+}
+form input{
+    transition: 0.3s all;
+    background: #fff;
+    border:none;
+    padding: 8px;
+    width: 50%;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    border-radius: 8px;
+}
+form input:hover{
+    transition: 0.3s all;
+    border-bottom: 3px solid #003bcf;
+}
+.register{
+    float: right;
+    margin: 0;
+    border-radius: 60px;
+    padding: 12px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #001bfb, #ba00bb);
+    background-size: 400% 400%;
+    color: #fff;
+    animation: AnimationName 30s ease infinite;
+    margin: 0px 5px;
+    cursor: default;
+}   
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
